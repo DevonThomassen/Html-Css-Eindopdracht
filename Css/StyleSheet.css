@@ -1,0 +1,19 @@
+nav{
+    background-color: #C40028;
+    width: 50%;
+    height: 2vw;
+}
+#Nav_Items{
+    list-style: none;
+    
+}
+#Nav_Items li{
+    display: inline;
+    transition: background-color 1.0s ease;
+    border-left: black, 1px;
+    border-right:black, 1px;
+    text-align: center;
+}
+#Nav_Items li:hover{
+    background-color: #7e021b;
+}
