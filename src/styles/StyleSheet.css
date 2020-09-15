@@ -3,3 +3,18 @@
     --lol-blue: #0bc4e2;
     --lol-yellow: #d0a85c;
 }
+footer{
+    background: linear-gradient(to bottom, var(--black) 0%, #000000 100%);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    color: white;
+    padding-top: 1vw;
+    padding-left: 8vw;
+    font-size: 15px;
+}
+footer a{
+    color: #ffffff;
+}
