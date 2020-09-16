@@ -31,7 +31,21 @@ nav {
     display: flex;
     justify-content: space-between;
 }
-
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+footer a{
+    text-decoration: none;
+    color: var(--black);
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--white);
+}
 @media only screen and (max-width: 480){
 
 }
