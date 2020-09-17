@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="../styles/Stylesheet.css" />
-    <link rel="stylesheet" type="text/css" href="../contact/styleSheetContact.css" />
+    <link rel="stylesheet" type="text/css" href="./contact.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/global.css" />
 </head>
+
 <body>
     <header>
         <h1>Contact</h1>
@@ -19,49 +21,34 @@
         </nav>
     </header>
 
-    <main id="mainContact">
-        <div>
-            <table>
-                <tr>
-                    <td>Name: </td>
-                    <td><input type="Text"></td>
-                </tr>
-                <tr>
-                    <td>Category: </td>
-                    <td><select name="Category" id="categorySelecter">
-                        <option value="Lore">Lore</option>
-                        <option value="Gamemode">Gamemode</option>
-                        <option value="Champions">Champions</option>
-                        <option value="Overig">Overig</option>
-                    </select></td>
-                </tr>
-                <tr>
-                    <td>To:</td>
-                    <td>Qjh.diepstarten@student.avans.nl</td>
-                </tr>
-                <tr>
-                    <td>Message:</td>
-                    <td><textarea rows="8" style="resize: none; width: 300px; height: 200px;"></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="button" value="Send message" id="sendMail"></td>
-                </tr>
-            </table>
-        </div>
+    <main>
+        <form action="mailto:d.thomassen1@.student.avans.nl" method="GET">
+            <div class="name-container">
+                <div>Naam</div>
+                <input type="text" name="name">
+            </div>
+            <div class="category-container">
+                <div>Category</div>
+                <select name="subject">
+                    <option value="Lore">Lore</option>
+                    <option value="Gamemode">Gamemode</option>
+                    <option value="Champions">Champions</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="message-container">
+                <div>Message</div>
+                <textarea name="message"></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
     </main>
 
     <footer>
-        <div id="footerMeerWeten">
-            <strong>Wilt u meer weten:</strong>
-            <a href="./contact/index.html">Contact us!</a>
-            <a href="./about us/index.html">Wie zijn wij?</a>
-        </div>     
-        <div id="footerMedia">
-            <a target="_blank"  href="https://www.facebook.com/leagueoflegends"><img src="../../assets/images/Footer/faceBook.png" id="facebook"></a>
-            <a target="_blank" href="https://twitter.com/LeagueOfLegends?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="../../assets/images/Footer/twitter.png" id="twitter"></a>
-            <a target="_blank" href="https://www.youtube.com/user/RiotGamesInc"><img src="../../assets/images/Footer/youtube.png" id="youtube" style="width: 65px;"></a>
-            <img src="../../assets/images/Footer/gitHub.png" id="gitHub" style="width: 60px;">
-        </div>  
+
     </footer>
 </body>
+
 </html>

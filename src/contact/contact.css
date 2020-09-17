@@ -1,0 +1,28 @@
+textarea {
+    resize: none;
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+        justify-content: center;
+    }
+
+    input, select, button {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* form {
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    form > div {
+    } */
+}
+
+@media only screen and (max-width: 1024px) {
+}
