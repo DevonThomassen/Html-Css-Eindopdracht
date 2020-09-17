@@ -1,0 +1,47 @@
+.btn-p {
+    /* margin: 8px; */
+    height: 40px;
+    background-color: var(--lol-blue);
+    font-size: 14px;
+    font-family: "Roboto-Medium", sans-serif;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.btn-p:hover {
+    background-color: var(--lol-blue-d);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+input.text-field,
+select.select-field {
+    background-color: transparent;
+    color: var(--white);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+
+.text-field {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    caret-color: var(--white);
+}
+
+.select-field {
+    /* appearance: none; */
+    cursor: pointer;
+}
+
+.select-field:after {
+    background-color: red;
+}
+
+.select-field > option {
+    background-color: #4E535A;
+    color: var(--white);
+    border: none;
+}
