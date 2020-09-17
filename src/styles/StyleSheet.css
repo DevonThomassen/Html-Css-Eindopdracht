@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'Roboto-Light';
-    src: url('./../../assets/fonts/Roboto-Light.ttf');
+    font-family: "Roboto-Light";
+    src: url("./../../assets/fonts/Roboto-Light.ttf");
 }
 
 @font-face {
-    font-family: 'Roboto-Regular';
-    src: url('./../../assets/fonts/Roboto-Regular.ttf');
+    font-family: "Roboto-Regular";
+    src: url("./../../assets/fonts/Roboto-Regular.ttf");
 }
 
 :root {
@@ -13,17 +13,46 @@
     --white: #fff;
     --lol-blue: #0bc4e2;
     --lol-yellow: #d0a85c;
-    font-family: 'Roboto-Regular';
+    font-family: "Roboto-Regular";
 }
 
-html, body, h1 {
+html,
+body {
+    height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
-header, nav {
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    height: 75px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+header,
+nav {
     color: var(--white);
     background-color: var(--black);
+}
+
+nav div a {
+    color: var(--white);
+    text-decoration: none;
 }
 
 /* TODO: Fix nav */
@@ -31,46 +60,11 @@ nav {
     display: flex;
     justify-content: space-around;
 }
-footer{
-    background-color: var(--black);
-    color: var(--white);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: baseline;  
-    height: inherit;
-}
-#footerMeerWeten{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding: 40px;  
-    padding-left: 200px;
-}
-#media{
-    justify-content: flex-start;
-    flex-direction: row;
-    padding: 40px;  
-    padding-right: 200px;
-}
-#media img{
-    height: 50px;
-    width: 50px;
-}
-#twitter{
-    border-radius: 50px;
-}
-footer a{
-    color: var(--white);
-    text-decoration: none;
-}
-footer a:hover{
-    text-decoration: underline;
-}
 @media only screen and (max-width: 480){
-
+}
+@media only screen and (max-width: 480) {
 }
 
 @media only screen and (max-width: 1024) {
-
 }
+
