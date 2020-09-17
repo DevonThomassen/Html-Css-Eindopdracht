@@ -17,9 +17,22 @@ textarea {
     /* form {
         display: flex;
 
-        flex-direction: column;
+    button {
+        /* margin: 8px; */
+        height: 40px;
+        background-color: var(--lol-blue);
+        font-size: 14px;
+        font-family: "Roboto-Medium", sans-serif;
+        border: none;
+        border-radius: 4px;
+        box-sizing: border-box;
+        cursor: pointer;
     }
 
+    button:hover {
+        background-color: var(--lol-blue-d);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+    }
     form > div {
     } */
 }
