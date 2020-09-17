@@ -26,6 +26,11 @@ header, nav {
     background-color: var(--black);
 }
 
+nav div a {
+    color: var(--white);
+    text-decoration: none;
+}
+
 /* TODO: Fix nav */
 nav {
     display: flex;
@@ -45,31 +50,7 @@ footer a{
 footer a:hover{
     text-decoration: underline;
 }
-#Maincontact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Tijdelijk */
-    height: 600px;
-}
-#Maincontact div{
-    background-color: var(--black);
-    color: var(--white);
-    height: auto;
-    width: auto;
-    padding: 2vw;
-    border-radius: 20px;
-}
-#SendMail{
-    background-color: var(--lol-blue);
-    display: flex;
-    justify-content: center;
-    border: none;
-    border-radius: 2px;
-}
-#SendMail:hover{
-    background-color: var(--lol-yellow);
-}
+
 @media only screen and (max-width: 480){
 
 }
