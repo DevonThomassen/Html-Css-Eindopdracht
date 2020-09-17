@@ -34,8 +34,7 @@ body {
     flex-direction: column;
 }
 
-header,
-footer {
+header {
     height: 75px;
 }
 
@@ -50,12 +49,34 @@ nav {
     background-color: var(--black);
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    align-self: center;
+}
+
+header nav {
+    height: 100%;
+    align-content: center;
+}
+
+nav div {
+    flex: 1;
+}
+
 nav div a {
+    display: flex;
+    height: 100%;
+    width: 100%;
     color: var(--white);
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
 }
 
-/* TODO: Fix nav */
 nav {
     display: flex;
     justify-content: space-around;
