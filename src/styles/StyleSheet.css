@@ -29,22 +29,49 @@ header, nav {
 /* TODO: Fix nav */
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 footer{
     background-color: var(--black);
     color: var(--white);
     display: flex;
-    justify-content: center;
-    bottom: 0;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: baseline;  
+    height: inherit;
+    padding: 3vw;
 }
 footer a{
+    color: var(--white);
     text-decoration: none;
-    color: var(--black);
 }
 footer a:hover{
     text-decoration: underline;
+}
+#Maincontact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Tijdelijk */
+    height: 600px;
+}
+#Maincontact div{
+    background-color: var(--black);
     color: var(--white);
+    height: auto;
+    width: auto;
+    padding: 2vw;
+    border-radius: 20px;
+}
+#SendMail{
+    background-color: var(--lol-blue);
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 2px;
+}
+#SendMail:hover{
+    background-color: var(--lol-yellow);
 }
 @media only screen and (max-width: 480){
 

@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="../styles/Stylesheet.css" />
 </head>
 <body>
-    
+    <header>
+        <h1>League of Legends</h1>
+        <nav>
+            <div>Home</div>
+            <div>About us</div>
+            <div>Champions</div>
+            <div>Gamemodes</div>
+            <div>Contact</div>
+        </nav>
+    </header>
+
+    <main id="Maincontact">
+        <div>
+            <table>
+                <tr>
+                    <td>Name: </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Category: </td>
+                    <td><select name="Category" id="CategorySelecter">
+                        <option value="Lore">Lore</option>
+                        <option value="Gamemode">Gamemode</option>
+                        <option value="Champions">Champions</option>
+                        <option value="Overig">Overig</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>To:</td>
+                    <td>Qjh.diepstarten@student.avans.nl</td>
+                </tr>
+                <tr>
+                    <td>Message:</td>
+                    <td><textarea rows="8" style="resize: none; width: auto;"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="Send message" id="SendMail"></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        Wilt u meer weten:<br>
+        <a href="contact/index.html">Contact us!</a>
+        <a href="about us/index.html">Wie zijn wij?</a>
+    </footer>
 </body>
 </html>
