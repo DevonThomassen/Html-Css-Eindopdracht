@@ -21,6 +21,8 @@
     --lol-blue-d: #0093B0;
     --lol-yellow: #d0a85c;
     font-family: "Roboto-Regular", sans-serif;
+    /* TODO: Remove this later */
+    color: var(--white);
 }
 
 html,
