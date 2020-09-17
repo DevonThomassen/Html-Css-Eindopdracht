@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("./../../assets/fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("./../../assets/fonts/Roboto-Regular.ttf");
+}
+
+:root {
+    --black: #212121;
+    --white: #fff;
+    --lol-blue: #0bc4e2;
+    --lol-yellow: #d0a85c;
+    font-family: "Roboto-Regular";
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 75px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+header,
+nav {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    height: 100%;
+    align-content: center;
+    justify-content: space-around;
+}
+
+nav div {
+    flex: 1;
+}
+
+nav div a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+nav div a:hover {
+    background-color: var(--lol-blue);
+}
+
+footer {
+    display: flex;
+    height: 100px;
+    background-color: var(--black);
+    color: var(--white);
+    justify-content: space-between;
+    flex-direction: row;
+}
+footer a {
+    color: var(--white);
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.info-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 40px;
+    padding-left: 200px;
+}
+.media-container {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    padding-right: 200px;
+}
+.media-container img {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+#twitter {
+    border-radius: 50px;
+}
+@media only screen and (max-width: 480px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .media-container {
+        padding: 0;
+        padding-top: 10px;
+    }
+    .info-container {
+        padding: 0;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+}
