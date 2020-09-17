@@ -60,11 +60,59 @@ nav {
     display: flex;
     justify-content: space-around;
 }
-@media only screen and (max-width: 480){
+footer{
+    background-color: var(--black);
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    color: var(--white);
 }
-@media only screen and (max-width: 480) {
+footer a{
+    color: var(--white);
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+#footerMeerWeten{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 40px;  
+    padding-left: 200px;
+}
+#footerMedia{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;  
+    padding-right: 200px;
+}
+#footerMedia img{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+}
+#twitter{
+    border-radius: 50px;
+}
+@media only screen and (max-width: 480px){
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #footerMedia{
+        padding: 0;  
+        padding-top: 10px;
+    }
+    #footerMeerWeten{
+        padding: 0;  
+        padding-left: 0;
+    }
+}
+@media only screen and (max-width: 480px) {
 }
 
-@media only screen and (max-width: 1024) {
+@media only screen and (max-width: 1024px) {
 }
 
