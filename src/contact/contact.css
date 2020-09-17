@@ -7,15 +7,24 @@ textarea {
         justify-content: center;
     }
 
-    input, select, button {
+    input,
+    select,
+    button {
         width: 100%;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
-    /* form {
-        display: flex;
+    form {
+        /* background-color: var(--lol-blue); */
+        width: 100%;
+        margin: 50px;
+    }
+
+    form > div {
+        padding-bottom: 10px;
+    }
 
     button {
         /* margin: 8px; */
@@ -33,6 +42,7 @@ textarea {
         background-color: var(--lol-blue-d);
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
     }
+    /*
     form > div {
     } */
 }
