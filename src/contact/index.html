@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="../styles/Stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../contact/styleSheetContact.css" />
 </head>
 <body>
     <header>
@@ -18,16 +19,16 @@
         </nav>
     </header>
 
-    <main id="Maincontact">
+    <main id="mainContact">
         <div>
             <table>
                 <tr>
                     <td>Name: </td>
-                    <td><input type="text"></td>
+                    <td><input type="Text"></td>
                 </tr>
                 <tr>
                     <td>Category: </td>
-                    <td><select name="Category" id="CategorySelecter">
+                    <td><select name="Category" id="categorySelecter">
                         <option value="Lore">Lore</option>
                         <option value="Gamemode">Gamemode</option>
                         <option value="Champions">Champions</option>
@@ -40,19 +41,26 @@
                 </tr>
                 <tr>
                     <td>Message:</td>
-                    <td><textarea rows="8" style="resize: none; width: auto;"></textarea></td>
+                    <td><textarea rows="8" style="resize: none; width: 300px; height: 200px;"></textarea></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="button" value="Send message" id="SendMail"></td>
+                    <td colspan="2"><input type="button" value="Send message" id="sendMail"></td>
                 </tr>
             </table>
         </div>
     </main>
 
     <footer>
-        Wilt u meer weten:<br>
-        <a href="contact/index.html">Contact us!</a>
-        <a href="about us/index.html">Wie zijn wij?</a>
+        <div id="footerMeerWeten">
+            Wilt u meer weten:<br>
+            <a href="contact/index.html">Contact us!</a>
+            <a href="about us/index.html">Wie zijn wij?</a>
+        </div>     
+        <div id="media">
+            <img src="../../assets/images/Footer/faceBook.png" id="facebook">
+            <img src="../../assets/images/Footer/twitter.png" id="twitter">
+            <img src="../../assets/images/Footer/youtube.png" id="youtube">
+        </div>  
     </footer>
 </body>
 </html>

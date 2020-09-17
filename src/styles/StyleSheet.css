@@ -35,11 +35,30 @@ footer{
     background-color: var(--black);
     color: var(--white);
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
     align-items: baseline;  
     height: inherit;
-    padding: 3vw;
+}
+#footerMeerWeten{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 40px;  
+    padding-left: 200px;
+}
+#media{
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 40px;  
+    padding-right: 200px;
+}
+#media img{
+    height: 50px;
+    width: 50px;
+}
+#twitter{
+    border-radius: 50px;
 }
 footer a{
     color: var(--white);
@@ -47,31 +66,6 @@ footer a{
 }
 footer a:hover{
     text-decoration: underline;
-}
-#Maincontact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Tijdelijk */
-    height: 600px;
-}
-#Maincontact div{
-    background-color: var(--black);
-    color: var(--white);
-    height: auto;
-    width: auto;
-    padding: 2vw;
-    border-radius: 20px;
-}
-#SendMail{
-    background-color: var(--lol-blue);
-    display: flex;
-    justify-content: center;
-    border: none;
-    border-radius: 2px;
-}
-#SendMail:hover{
-    background-color: var(--lol-yellow);
 }
 @media only screen and (max-width: 480){
 
