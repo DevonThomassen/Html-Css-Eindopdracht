@@ -14,11 +14,13 @@
 }
 
 :root {
+    --bg-black: #232931;
     --black: #212121;
     --white: #fff;
     --lol-blue: #0bc4e2;
+    --lol-blue-d: #0093B0;
     --lol-yellow: #d0a85c;
-    font-family: "Roboto-Regular";
+    font-family: "Roboto-Regular", sans-serif;
 }
 
 html,
@@ -46,6 +48,7 @@ header {
 main {
     display: flex;
     flex: 1;
+    background-color: var(--bg-black);
 }
 
 header,
