@@ -20,10 +20,20 @@ textarea {
         /* background-color: var(--lol-blue); */
         width: 100%;
         margin: 50px;
+        align-items: center;
     }
 
     form > div {
         padding-bottom: 10px;
+    }
+    form > div > label {
+        font-size: 12px;
+    }
+    form > div > input,
+    form > div > select,
+    form > div > textarea,
+    form > div > button {
+        font-size: 18px;
     }
     /*
     form > div {
