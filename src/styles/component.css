@@ -16,18 +16,19 @@
 }
 
 input.text-field,
+textarea.text-field,
 select.select-field {
+    box-sizing: border-box;
     background-color: transparent;
     color: var(--white);
     border-left: none;
     border-top: none;
     border-right: none;
+    font-family: inherit;
 }
 
 .text-field {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    
+    padding: 6px 0 7px;
     caret-color: var(--white);
 }
 
@@ -44,4 +45,13 @@ select.select-field {
     background-color: #4E535A;
     color: var(--white);
     border: none;
+}
+
+textarea.text-field {
+    width: 100%;
+}
+
+option {
+    padding: 0;
+    margin: 0;
 }
