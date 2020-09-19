@@ -133,10 +133,11 @@ footer a:hover {
     footer {
         flex-direction: column;
         justify-content: center;
+        padding: 10px;
     }
     .media-container {
         padding: 0;
-        padding-top: 10px;
+        padding-top: 0;
     }
     .info-container {
         padding: 0;

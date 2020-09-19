@@ -1,0 +1,39 @@
+@media only screen and (max-width: 480px) {
+    main {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .infoDevon,
+    .infoQuinn {
+        /* background-color: var(--lol-blue); */
+        width: auto;
+        margin: 30px;
+        align-items: center;
+        padding: 10px;
+
+        background-color: #212121;
+        border-radius: 10px;
+    }
+
+    .infoDevon > div,
+    .infoQuinn > div {
+        padding-bottom: 10px;
+    }
+    .infoDevon > div > img,
+    .infoQuinn > div > img{
+        width: 200px;
+        border-radius: 100px;
+        margin-left: 100px;
+    }
+    .infoDevon > div > label,
+    .infoQuinn > div > label{
+        font-size: 12px;
+    }
+    /*
+    form > div {
+    } */
+}
+
+@media only screen and (max-width: 1024px) {
+}
