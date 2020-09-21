@@ -5,6 +5,7 @@ textarea {
 @media only screen and (max-width: 480px) {
     main {
         justify-content: center;
+        align-items: center;
     }
 
     input,
