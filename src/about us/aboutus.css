@@ -1,3 +1,33 @@
+main {
+    justify-content: center;
+    flex-direction: row;
+}
+.infoDevon,
+.infoQuinn {
+    /* background-color: var(--lol-blue); */
+    width: auto;
+    margin: 30px;
+    align-items: center;
+    padding: 10px;
+
+    background-color: #212121;
+    border-radius: 10px;
+}
+.infoDevon > div,
+.infoQuinn > div {
+    padding-bottom: 10px;
+}
+.infoDevon > div > img,
+.infoQuinn > div > img{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin-left: 10px;
+}
+.infoDevon > div > label,
+.infoQuinn > div > label{
+    font-size: 17px;
+}
 @media only screen and (max-width: 480px) {
     main {
         justify-content: center;
@@ -23,6 +53,7 @@
     .infoDevon > div > img,
     .infoQuinn > div > img{
         width: 200px;
+        height: 200px;
         border-radius: 100px;
         margin-left: 100px;
     }
@@ -36,4 +67,34 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    main {
+        justify-content: center;
+        flex-direction: row;
+    }
+    .infoDevon,
+    .infoQuinn {
+        /* background-color: var(--lol-blue); */
+        width: auto;
+        margin: 30px;
+        align-items: center;
+        padding: 10px;
+
+        background-color: #212121;
+        border-radius: 10px;
+    }
+    .infoDevon > div,
+    .infoQuinn > div {
+        padding-bottom: 10px;
+    }
+    .infoDevon > div > img,
+    .infoQuinn > div > img{
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin-left: 10px;
+    }
+    .infoDevon > div > label,
+    .infoQuinn > div > label{
+        font-size: 12px;
+    }
 }
