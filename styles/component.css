@@ -33,6 +33,7 @@ select.select-field {
 }
 
 .select-field {
+    /* TODO: Change arrow */
     /* appearance: none; */
     cursor: pointer;
 }
