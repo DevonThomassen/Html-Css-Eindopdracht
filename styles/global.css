@@ -141,9 +141,10 @@ footer a:hover {
     width: 50px;
     padding: 5px;
 }
-#twitter {
+.twitter {
     border-radius: 50px;
 }
+
 /* #endregion footer */
 
 /* #region about */
@@ -151,31 +152,25 @@ main {
     justify-content: center;
     flex-direction: row;
 }
-.infoDevon,
-.infoQuinn {
+.information-card {
     /* background-color: var(--lol-blue); */
     width: auto;
     margin: 30px;
     align-items: center;
     padding: 10px;
+    font-size: 12px;
 
     background-color: #212121;
     border-radius: 10px;
 }
-.infoDevon > div,
-.infoQuinn > div {
+.information-card > div {
     padding-bottom: 10px;
 }
-.infoDevon > div > img,
-.infoQuinn > div > img {
+.information-card > div > img {
     width: 300px;
     height: 300px;
     border-radius: 150px;
     margin-left: 10px;
-}
-.infoDevon > div > label,
-.infoQuinn > div > label {
-    font-size: 17px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -183,31 +178,25 @@ main {
         justify-content: center;
         flex-direction: row;
     }
-    .infoDevon,
-    .infoQuinn {
+    .information-card {
         /* background-color: var(--lol-blue); */
         width: auto;
         margin: 30px;
         align-items: center;
         padding: 10px;
+        font-size: 12px;
 
         background-color: #212121;
         border-radius: 10px;
     }
-    .infoDevon > div,
-    .infoQuinn > div {
+    .information-card > div {
         padding-bottom: 10px;
     }
-    .infoDevon > div > img,
-    .infoQuinn > div > img {
+    .information-card > div > img {
         width: 200px;
         height: 200px;
         border-radius: 100px;
         margin-left: 10px;
-    }
-    .infoDevon > div > label,
-    .infoQuinn > div > label {
-        font-size: 12px;
     }
 }
 
@@ -217,32 +206,26 @@ main {
         flex-direction: column;
     }
 
-    .infoDevon,
-    .infoQuinn {
+    .information-card {
         /* background-color: var(--lol-blue); */
         width: auto;
         margin: 30px;
         align-items: center;
         padding: 10px;
+        font-size: 12px;
 
         background-color: #212121;
         border-radius: 10px;
     }
 
-    .infoDevon > div,
-    .infoQuinn > div {
+    .information-card > div {
         padding-bottom: 10px;
     }
-    .infoDevon > div > img,
-    .infoQuinn > div > img {
+    .information-card > div > img {
         width: 200px;
         height: 200px;
         border-radius: 100px;
-        margin-left: 100px;
-    }
-    .infoDevon > div > label,
-    .infoQuinn > div > label {
-        font-size: 12px;
+        margin-left: 10px;
     }
     /*
     form > div {
