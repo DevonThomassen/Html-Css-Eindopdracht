@@ -13,11 +13,16 @@
     <header>
         <h1>Contact</h1>
         <nav>
-            <div><a href="../index.html">Home</a></div>
-            <div><a href="./about.html">About us</a></div>
+            <div><a href="../index.html">Home</a></div>          
             <div><a href="./champions.html">Champions</a></div>
             <div><a href="./gamemodes.html">Maps</a></div>
-            <div><a href="./contact.html">Contact</a></div>
+            <div class="dropdown">
+                <span>Social</span>
+                <div class="dropdown-content">
+                    <a href="./contact.html">Contact</a>
+                    <a href="./about.html">About us</a>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -26,6 +31,10 @@
             <div class="name-container">
                 <label>Naam</label>
                 <input class="text-field" type="text" name="name">
+            </div>
+            <div class="birth-container">
+                <label>Day of birth</label>
+                <input class="text-field" type="date" name="birth">
             </div>
             <div class="subject-container">
                 <label>Subject</label>
@@ -39,6 +48,10 @@
             <div class="message-container">
                 <label>Message</label>
                 <textarea class="text-field" rows="2" name="body"></textarea>
+            </div>
+            <div class="patch-notes-container">
+                <label>Do you want to receive the patch notes?</label>
+                <input class="text-field" type="checkbox" name="patch-notes">
             </div>
             <div>
                 <button class="btn-p" type="submit">Submit</button>
