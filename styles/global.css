@@ -124,6 +124,8 @@ nav div a:hover,
 nav div span:hover {
     background-color: var(--lol-blue);
 }
+/* #endregion header */
+
 /* #region header dropdown*/
 .dropdown-content {
     display: none;
@@ -140,7 +142,6 @@ nav div span:hover {
     display: flex;
   }
   /* #endregion header dropdown*/
-/* #endregion header */
 
 /* #region footer */
 footer {
@@ -179,7 +180,10 @@ footer a:hover {
 .twitter {
     border-radius: 50px;
 }
-
+.media-container .youtube,
+.media-container .github{
+    width: 60px;
+}
 /* #endregion footer */
 
 /* #region about */
@@ -206,85 +210,6 @@ main {
     height: 300px;
     border-radius: 150px;
     margin-left: 10px;
-}
-
-@media only screen and (max-width: 1024px) {
-    main {
-        justify-content: center;
-        flex-direction: row;
-    }
-    .information-card {
-        /* background-color: var(--lol-blue); */
-        width: auto;
-        margin: 30px;
-        align-items: center;
-        padding: 10px;
-        font-size: 12px;
-
-        background-color: #212121;
-        border-radius: 10px;
-    }
-    .information-card > div {
-        padding-bottom: 10px;
-    }
-    .information-card > div > img {
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        margin-left: 10px;
-    }
-    /* #region header dropdown*/
-    .dropdown-content {
-        width: 256px;
-        height: 100px;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: flex;
-    }
-    /* #endregion header dropdown*/
-}
-
-@media only screen and (max-width: 480px) {
-    main {
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .information-card {
-        /* background-color: var(--lol-blue); */
-        width: auto;
-        margin: 30px;
-        align-items: center;
-        padding: 10px;
-        font-size: 12px;
-
-        background-color: #212121;
-        border-radius: 10px;
-    }
-
-    .information-card > div {
-        padding-bottom: 10px;
-    }
-    .information-card > div > img {
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        margin-left: 10px;
-    }
-    /* #region header dropdown*/
-    .dropdown-content {
-        width: 120px;
-        height: 100px;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: flex;
-    }
-    /* #endregion header dropdown*/
-    /*
-    form > div {
-    } */
 }
 
 /* #endregion about */
@@ -329,44 +254,196 @@ form > div > textarea,
 form > div > button {
     font-size: 24px;
 }
+/* #endregion contact */
+
+/* #region gamemodes */
+
+main {
+    justify-content: center;
+    flex-direction: column;
+}
+main > div {
+    /* background-color: var(--lol-blue); */
+    width: auto;
+    margin: 30px;
+    align-items: center;
+    padding: 10px;
+
+    background-color: #212121;
+    border-radius: 10px;
+    flex-direction: row;
+}
+main > div > img {
+    border-radius: 25px;
+    height: 300px;
+    width: 300px;
+}
+.imgTwistedTreeline {
+    border-radius: 25px;
+    height: 300px;
+    width: 400px;
+}
+/* #endregion gamemodes */
 
 @media only screen and (max-width: 1024px) {
-    main {
-        justify-content: center;
-        align-items: center;
-    }
 
-    input,
-    select,
-    button {
-        width: auto;
-        /* margin: 0;
-        padding: 0; */
-        box-sizing: border-box;
-    }
+/* #region header dropdown*/
 
-    form {
-        /* background-color: var(--lol-blue); */
-        width: 50%;
-        margin: 50px;
-        align-items: center;
-    }
+.dropdown-content {
+    width: 256px;
+    height: 100px;
+}
 
-    form > div {
-        padding-bottom: 10px;
-    }
-    form > div > label {
-        font-size: 12px;
-    }
-    form > div > input,
-    form > div > select,
-    form > div > textarea,
-    form > div > button {
-        font-size: 18px;
-    }
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+/* #endregion header dropdown*/
+
+/* #region About*/
+main {
+    justify-content: center;
+    flex-direction: row;
+}
+.information-card {
+    /* background-color: var(--lol-blue); */
+    width: auto;
+    margin: 30px;
+    align-items: center;
+    padding: 10px;
+    font-size: 12px;
+
+    background-color: #212121;
+    border-radius: 10px;
+}
+.information-card > div {
+    padding-bottom: 10px;
+}
+.information-card > div > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin-left: 10px;
+}
+
+/* #endregion About*/
+
+/* #region contact */
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+input,
+select,
+button {
+    width: auto;
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+form {
+    /* background-color: var(--lol-blue); */
+    width: 50%;
+    margin: 50px;
+    align-items: center;
+}
+
+form > div {
+    padding-bottom: 10px;
+}
+form > div > label {
+    font-size: 12px;
+}
+form > div > input,
+form > div > select,
+form > div > textarea,
+form > div > button {
+    font-size: 18px;
+}
+/* #endregion contact*/
+
+/* #region gamemodes */
+main {
+    justify-content: center;
+    flex-direction: column;
+}
+main > div {
+    /* background-color: var(--lol-blue); */
+    width: auto;
+    margin: 30px;
+    align-items: center;
+    padding: 10px;
+
+    background-color: #212121;
+    border-radius: 10px;
+    flex-direction: row;
+}
+main > div > img {
+    border-radius: 25px;
+    height: 200px;
+    width: 200px;
+}
+.imgTwistedTreeline {
+    border-radius: 25px;
+    height: 200px;
+    width: 300px;
+}
+/* #endregion gamemodes */
 }
 
 @media only screen and (max-width: 480px) {
+    
+    /* #region header dropdown*/
+    .dropdown-content {
+        width: 120px;
+        height: 100px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;
+    }
+    /* #endregion header dropdown*/
+
+    /* #region Homepage */
+    iframe {
+        display: flex;
+        width: 100%;
+        height: 269px;
+        border-radius: 30px;
+    }
+    /* #endregion Homepage */
+
+    /* #region About*/
+    main {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .information-card {
+        /* background-color: var(--lol-blue); */
+        width: auto;
+        margin: 30px;
+        align-items: center;
+        padding: 10px;
+        font-size: 12px;
+
+        background-color: #212121;
+        border-radius: 10px;
+    }
+
+    .information-card > div {
+        padding-bottom: 10px;
+    }
+    .information-card > div > img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin-left: 10px;
+    }
+    /* #endregion About */
+    
+    /* #region contact */
     main {
         justify-content: center;
         align-items: center;
@@ -403,66 +480,9 @@ form > div > button {
     /*
     form > div {
     } */
-}
-/* #endregion contact */
-
-/* #region gamemodes */
-
-main {
-    justify-content: center;
-    flex-direction: column;
-}
-main > div {
-    /* background-color: var(--lol-blue); */
-    width: auto;
-    margin: 30px;
-    align-items: center;
-    padding: 10px;
-
-    background-color: #212121;
-    border-radius: 10px;
-    flex-direction: row;
-}
-main > div > img {
-    border-radius: 25px;
-    height: 300px;
-    width: 300px;
-}
-.imgTwistedTreeline {
-    border-radius: 25px;
-    height: 300px;
-    width: 400px;
-}
-
-@media only screen and (max-width: 1024px) {
-    main {
-        justify-content: center;
-        flex-direction: column;
-    }
-    main > div {
-        /* background-color: var(--lol-blue); */
-        width: auto;
-        margin: 30px;
-        align-items: center;
-        padding: 10px;
-
-        background-color: #212121;
-        border-radius: 10px;
-        flex-direction: row;
-    }
-    main > div > img {
-        border-radius: 25px;
-        height: 200px;
-        width: 200px;
-    }
-    .imgTwistedTreeline {
-        border-radius: 25px;
-        height: 200px;
-        width: 300px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
+    /* #endregion contact*/
+    
+    /* #region gamemodes */
     main {
         justify-content: center;
         flex-direction: column;
@@ -489,17 +509,9 @@ main > div > img {
         height: 200px;
         width: 300px;
     }
-}
-
-/* #endregion gamemodes */
-
-/* #region media_queries */
-@media only screen and (max-width: 1024px) {
-
-
-}
-
-@media only screen and (max-width: 480px) {
+    /* #endregion gamemodes */
+    
+    /* #region Footer*/
     footer {
         flex-direction: column;
         justify-content: center;
@@ -513,14 +525,6 @@ main > div > img {
         padding: 0;
         padding-left: 0;
     }
-    /* #region iframe */
-    iframe {
-        display: flex;
-        width: 100%;
-        height: 269px;
-        border-radius: 30px;
-    }
-    /* #endregion iframe */
+    /* #endregion Footer*/
+ 
 }
-
-/* #endregion media_queries*/
