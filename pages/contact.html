@@ -32,9 +32,12 @@
                 <label>Naam</label>
                 <input class="text-field" type="text" name="name">
             </div>
-            <div class="birth-container">
-                <label>Day of birth</label>
-                <input class="text-field" type="date" name="birth">
+            <div class="gender-container">
+                <label>Gender</label>
+                <input class="radio-field" type="radio" name="gender" value="male">
+                <label for="male">Male</label>
+                <input class="radio-field" type="radio" name="gender" value="female">
+                <label for="female">Female</label>
             </div>
             <div class="subject-container">
                 <label>Subject</label>
@@ -51,8 +54,9 @@
             </div>
             <div class="patch-notes-container">
                 <label>Do you want to receive the patch notes?</label>
-                <input class="text-field" type="checkbox" name="patch-notes">
+                <input class="checkbox-field" type="checkbox" name="patch-notes">
             </div>
+            
             <div>
                 <button class="btn-p" type="submit">Submit</button>
             </div>
