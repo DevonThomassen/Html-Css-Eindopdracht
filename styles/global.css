@@ -40,6 +40,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 h1 {
@@ -59,14 +60,15 @@ main {
     flex: 1;
     background-color: var(--bg-black);
 }
-/* #region iframe */
+
 iframe {
     display: flex;
     width: 853px;
     height: 480px;
-    border-radius: 30px;
+    border-radius: 5px;
+    border: var(--lol-blue-d) 5px solid;
 }
-/* #endregion iframe */
+
 /* #endregion main */
 
 /* #region header */
@@ -131,7 +133,7 @@ nav div span:hover {
     display: none;
     position: absolute;
     background-color: var(--black);
-    width: 427px;
+    width: 25%;
     height: 100px;
     z-index: 1;
     justify-content: center;
@@ -140,8 +142,8 @@ nav div span:hover {
 
 .dropdown:hover .dropdown-content {
     display: flex;
-  }
-  /* #endregion header dropdown*/
+}
+/* #endregion header dropdown*/
 
 /* #region footer */
 footer {
