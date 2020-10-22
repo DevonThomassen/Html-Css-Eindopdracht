@@ -1,3 +1,25 @@
+/* .hamburger {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border: var(--white) 2px solid;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--white);
+} */
+
 .btn-p {
     /* margin: 8px; */
     height: 40px;
