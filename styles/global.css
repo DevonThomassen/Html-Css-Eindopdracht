@@ -126,6 +126,10 @@ nav div a:hover,
 nav div span:hover {
     background-color: var(--lol-blue);
 }
+
+/* .hamburger {
+    display: none;
+} */
 /* #endregion header */
 
 /* #region header dropdown*/
@@ -138,6 +142,7 @@ nav div span:hover {
     z-index: 1;
     justify-content: center;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .dropdown:hover .dropdown-content {
@@ -217,6 +222,22 @@ main {
 /* #endregion about */
 
 /* #region champions */
+/* .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.image-gallery > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--lol-blue-d) 5px solid;
+    border-radius: 5px;
+}
+.image-gallery > div img {
+    max-width: 500px;
+} */
 /* #endregion champions */
 
 /* #region contact */
@@ -260,11 +281,11 @@ form > div > button {
 
 /* #region gamemodes */
 
-main {
+main#gamemodes {
     justify-content: center;
     flex-direction: column;
 }
-main > div {
+main#gamemodes > div {
     /* background-color: var(--lol-blue); */
     width: auto;
     margin: 30px;
@@ -275,7 +296,7 @@ main > div {
     border-radius: 10px;
     flex-direction: row;
 }
-main > div > img {
+main#gamemodes > div > img {
     border-radius: 25px;
     height: 300px;
     width: 300px;
@@ -366,11 +387,11 @@ form > div > button {
 /* #endregion contact*/
 
 /* #region gamemodes */
-main {
+main#gamemodes {
     justify-content: center;
     flex-direction: column;
 }
-main > div {
+main#gamemodes > div {
     /* background-color: var(--lol-blue); */
     width: auto;
     margin: 30px;
@@ -381,7 +402,7 @@ main > div {
     border-radius: 10px;
     flex-direction: row;
 }
-main > div > img {
+main#gamemodes > div > img {
     border-radius: 25px;
     height: 200px;
     width: 200px;
@@ -445,7 +466,7 @@ main > div > img {
     }
     /* #endregion About */
     
-    /* #region contact */
+    /* #region Contact */
     main {
         justify-content: center;
         align-items: center;
@@ -482,14 +503,14 @@ main > div > img {
     /*
     form > div {
     } */
-    /* #endregion contact*/
+    /* #endregion Contact*/
     
     /* #region gamemodes */
     main {
         justify-content: center;
         flex-direction: column;
     }
-    main > div {
+    main#gamemodes > div {
         /* background-color: var(--lol-blue); */
         width: auto;
         margin: 30px;
@@ -499,7 +520,7 @@ main > div > img {
         background-color: #212121;
         border-radius: 10px;
     }
-    main > div > img {
+    main#gamemodes > div > img {
         margin-left: 100px;
         border-radius: 25px;
         height: 200px;
@@ -529,4 +550,24 @@ main > div > img {
     }
     /* #endregion Footer*/
  
+    /* #region Champions */
+    .image-gallery {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        gap: 10px
+    }
+
+    .image-gallery > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: var(--lol-blue-d) 5px solid;
+        border-radius: 5px;
+    }
+    .image-gallery > div img {
+        max-width: 320px;
+    }
+
+    /* #endregion Champions */
 }
