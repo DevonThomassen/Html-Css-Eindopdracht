@@ -564,9 +564,12 @@ main#gamemodes > div > img {
         align-items: center;
         border: var(--lol-blue-d) 5px solid;
         border-radius: 5px;
+        max-width: 320px;
+        box-sizing: border-box;
     }
     .image-gallery > div img {
-        max-width: 320px;
+        height: 100%;
+        width: 100%;
     }
 
     /* #endregion Champions */
