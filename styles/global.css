@@ -285,7 +285,7 @@ main#gamemodes {
     justify-content: center;
     flex-direction: column;
 }
-main#gamemodes > div {
+.Gamemode-wrapper > div {
     /* background-color: var(--lol-blue); */
     width: auto;
     margin: 30px;
@@ -296,7 +296,7 @@ main#gamemodes > div {
     border-radius: 10px;
     flex-direction: row;
 }
-main#gamemodes > div > img {
+.Gamemode-wrapper > div > img {
     border-radius: 25px;
     height: 300px;
     width: 300px;
@@ -391,7 +391,7 @@ main#gamemodes {
     justify-content: center;
     flex-direction: column;
 }
-main#gamemodes > div {
+.Gamemode-wrapper > div {
     /* background-color: var(--lol-blue); */
     width: auto;
     margin: 30px;
@@ -402,7 +402,7 @@ main#gamemodes > div {
     border-radius: 10px;
     flex-direction: row;
 }
-main#gamemodes > div > img {
+.Gamemode-wrapper > div > img {
     border-radius: 25px;
     height: 200px;
     width: 200px;
@@ -510,7 +510,7 @@ main#gamemodes > div > img {
         justify-content: center;
         flex-direction: column;
     }
-    main#gamemodes > div {
+    .Gamemode-wrapper > div {
         /* background-color: var(--lol-blue); */
         width: auto;
         margin: 30px;
@@ -520,7 +520,7 @@ main#gamemodes > div > img {
         background-color: #212121;
         border-radius: 10px;
     }
-    main#gamemodes > div > img {
+    .Gamemode-wrapper > div > img {
         margin-left: 100px;
         border-radius: 25px;
         height: 200px;
