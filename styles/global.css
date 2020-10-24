@@ -40,7 +40,6 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 h1 {
@@ -149,43 +148,61 @@ nav div span:hover {
 footer {
     display: flex;
     height: 100px;
+    width: 100%;
+    padding: 0 50px; /* TODO: phone version smaller */
     background-color: var(--black);
     color: var(--white);
     justify-content: space-between;
     flex-direction: row;
+    box-sizing: border-box;
 }
+
 footer a {
     color: var(--white);
     text-decoration: none;
 }
+
 footer a:hover {
     text-decoration: underline;
 }
+
 .info-container {
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
-    padding: 40px;
-    padding-left: 200px;
+    justify-content: space-evenly;
 }
+
+/* TODO: make p global ? */
+.info-container p {
+    margin: 0;
+    padding: 0;
+}
+
 .media-container {
     display: flex;
     flex-direction: row;
-    padding: 40px;
-    padding-right: 200px;
+    align-items: center;
+    gap: 15px;
 }
-.media-container img {
+
+.image-wrapper {
+    flex: 1;
     height: 50px;
     width: 50px;
-    padding: 5px;
 }
-.twitter {
-    border-radius: 50px;
+.image-wrapper a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
-.media-container .youtube,
-.media-container .github {
-    width: 60px;
+
+.image-wrapper a img {
+    width: 100%;
+    border-radius: 5px;
 }
+
 /* #endregion footer */
 
 /* #region Home */
@@ -347,24 +364,29 @@ form > div > button {
     width: auto;
     margin: 30px;
     align-items: center;
-    padding: 10px;
 
-    background-color: #212121;
-    border-radius: 10px;
-    flex-direction: row;
+/* #region Epic iframe code want ik haat iframes */
+/* ! Epic code anders vond ik de iframes echt lelijk :^) */
+@media only screen and (max-width: 1450px) {
+    /* Omdat ik het anders echt lelijk vond */
+    .iframe-wrapper {
+        height: 50%;
+    }
+
+    .gamemode-wrapper {
+        /* flex-direction: column; */
 }
-.gamemode-wrapper > div > img {
-    border-radius: 25px;
+
+    .map-image-wrapper {
     height: 300px;
-    width: 300px;
-    margin-right: 10px;
+        min-width: 400px;
+    }
+
+    .map-information-wrapper {
 }
-.imgTwistedTreeline {
-    border-radius: 25px;
-    height: 300px;
-    width: 400px;
 }
-/* #endregion gamemodes */
+/* #endregion Epic iframe code want ik haat iframes */
+
 
 @media only screen and (max-width: 1024px) {
     /* #region header dropdown*/
@@ -445,6 +467,15 @@ form > div > button {
     /* #region Champions */
     /* #endregion Champions */
 }
+/* #region Epic iframe code want ik haat iframes */
+/* ! Epic code anders vond ik de iframes echt lelijk :^) */
+@media only screen and (max-width: 950px) {
+    /* Omdat ik het anders echt lelijk vond */
+    .iframe-wrapper {
+        height: 30%;
+    }
+}
+/* #endregion Epic iframe code want ik haat iframes */
 
 @media only screen and (max-width: 480px) {
     /* #region header dropdown*/
@@ -521,19 +552,6 @@ form > div > button {
     /* #endregion gamemodes */
 
     /* #region Footer*/
-    footer {
-        flex-direction: column;
-        justify-content: center;
-        padding: 10px;
-    }
-    .media-container {
-        padding: 0;
-        padding-top: 0;
-    }
-    .info-container {
-        padding: 0;
-        padding-left: 0;
-    }
     /* #endregion Footer*/
 
     /* #region Champions */
@@ -548,19 +566,3 @@ form > div > button {
     /* #endregion Champions */
 }
 
-/* #region Epic iframe code want ik haat iframes */
-/* ! Epic code anders vond ik de iframes echt lelijk :^) */
-@media only screen and (max-width: 1450px) {
-    /* Omdat ik het anders echt lelijk vond */
-    .iframe-wrapper {
-        height: 50%;
-    }
-}
-
-@media only screen and (max-width: 950px) {
-    /* Omdat ik het anders echt lelijk vond */
-    .iframe-wrapper {
-        height: 30%;
-    }
-}
-/* #endregion Epic iframe code want ik haat iframes */
