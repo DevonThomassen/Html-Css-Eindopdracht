@@ -52,7 +52,8 @@ body {
     flex-direction: column;
 }
 
-header, footer {
+header,
+footer {
     z-index: 2;
 }
 /* #endregion start */
@@ -613,6 +614,25 @@ form > div > button {
     /* #endregion gamemodes */
 
     /* #region Footer*/
+    footer {
+        flex-direction: column;
+    }
+
+    .info-container {
+        flex-direction: row;
+        flex: 1;
+        margin-top: 10px;
+    }
+
+    .media-container {
+        flex: 1;
+        margin-bottom: 10px;
+    }
+
+    .image-wrapper a img {
+        height: 50px;
+        width: auto;
+    }
     /* #endregion Footer*/
 
     /* #region Champions */
