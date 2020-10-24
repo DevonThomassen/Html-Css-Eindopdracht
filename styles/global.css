@@ -194,8 +194,12 @@ footer a:hover {
 /* #endregion footer */
 
 /* #region about */
-main {
-    justify-content: center;
+/* main { */
+    /* justify-content: center; */
+    
+/* }  */
+.information-cards-container {
+    display: flex;
     flex-direction: row;
 }
 .information-card {
