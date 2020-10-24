@@ -493,26 +493,13 @@ form > div > button {
     /* #region gamemodes */
 
     .gamemode-wrapper > div {
-        /* background-color: var(--lol-blue); */
-        width: auto;
-        margin: 30px;
-        align-items: center;
-        padding: 10px;
-
-        background-color: #212121;
-        border-radius: 10px;
+        flex-direction: column;
     }
     .gamemode-wrapper > div > img {
-        margin-left: 100px;
-        border-radius: 25px;
-        height: 200px;
-        width: 200px;
+        margin-left: 20px;
     }
     .imgTwistedTreeline {
         margin-left: 50px;
-        border-radius: 25px;
-        height: 200px;
-        width: 300px;
     }
     /* #endregion gamemodes */
 
