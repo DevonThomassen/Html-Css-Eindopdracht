@@ -128,6 +128,7 @@ nav div span {
 nav div a:hover,
 nav div span:hover {
     background-color: var(--lol-blue);
+    transition: all 0.5s ease-in;
 }
 
 /* .hamburger {
@@ -136,6 +137,9 @@ nav div span:hover {
 /* #endregion header */
 
 /* #region header dropdown*/
+.dropdown {
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -198,12 +202,12 @@ footer a:hover {
 
 /* #region about */
 /* main { */
-    /* justify-content: center; */
-    
+/* justify-content: center; */
+
 /* }  */
 .information-cards-container {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
 }
 .information-card {
     /* background-color: var(--lol-blue); */
@@ -230,8 +234,17 @@ footer a:hover {
 
 /* #region champions */
 .image-gallery {
+    /* Variable space gap in pixels */
+    --space-gap: 1rem;
+
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    margin: var(--space-gap) 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: var(--space-gap);
+    user-select: none;
 }
 
 .image-gallery > div {
@@ -242,9 +255,14 @@ footer a:hover {
     border-radius: 5px;
     box-sizing: border-box;
 }
+.image-gallery > div {
+    max-width: 400px;
+}
+
 .image-gallery > div img {
-    max-width: 500px;
-} 
+    height: 100%;
+    width: 100%;
+}
 /* #endregion champions */
 
 /* #region contact */
@@ -312,11 +330,6 @@ form > div > button {
 @media only screen and (max-width: 1024px) {
     /* #region header dropdown*/
 
-    .dropdown-content {
-        width: 256px;
-        height: 100px;
-    }
-
     .dropdown:hover .dropdown-content {
         display: flex;
     }
@@ -383,30 +396,33 @@ form > div > button {
     }
     /* #endregion contact*/
 
-/* #region gamemodes */
+    /* #region gamemodes */
 
-.gamemode-wrapper > div {
-    /* background-color: var(--lol-blue); */
-    width: auto;
-    margin: 30px;
-    align-items: center;
-    padding: 10px;
+    .gamemode-wrapper > div {
+        /* background-color: var(--lol-blue); */
+        width: auto;
+        margin: 30px;
+        align-items: center;
+        padding: 10px;
 
-    background-color: #212121;
-    border-radius: 10px;
-    flex-direction: row;
-}
-.gamemode-wrapper > div > img {
-    border-radius: 25px;
-    height: 200px;
-    width: 200px;
-}
-.imgTwistedTreeline {
-    border-radius: 25px;
-    height: 200px;
-    width: 300px;
-}
-/* #endregion gamemodes */
+        background-color: #212121;
+        border-radius: 10px;
+        flex-direction: row;
+    }
+    .gamemode-wrapper > div > img {
+        border-radius: 25px;
+        height: 200px;
+        width: 200px;
+    }
+    .imgTwistedTreeline {
+        border-radius: 25px;
+        height: 200px;
+        width: 300px;
+    }
+    /* #endregion gamemodes */
+
+    /* #region Champions */
+    /* #endregion Champions */
 }
 
 @media only screen and (max-width: 480px) {
@@ -418,15 +434,16 @@ form > div > button {
 
     .dropdown:hover .dropdown-content {
         display: flex;
+        /* transform: all 0.5s ease-in-out; */
     }
     /* #endregion header dropdown*/
 
     /* #region Homepage */
     iframe {
         display: flex;
-        width: 100%;
-        height: 269px;
-        border-radius: 30px;
+        width: 90%;
+        height: 30%;
+        border-radius: 5px;
     }
     /* #endregion Homepage */
 
@@ -521,24 +538,11 @@ form > div > button {
 
     /* #region Champions */
     .image-gallery {
-        display: flex;
-        flex-direction: column;
-        margin: 10px 0;
-        gap: 10px;
+        --space-gap: 10px;
     }
 
     .image-gallery > div {
-        /* display: flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* border: var(--lol-blue-d) 5px solid; */
-        /* border-radius: 5px; */
         max-width: 320px;
-        /* box-sizing: border-box; */
-    }
-    .image-gallery > div img {
-        height: 100%;
-        width: 100%;
     }
 
     /* #endregion Champions */
