@@ -51,6 +51,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+header, footer {
+    z-index: 2;
+}
 /* #endregion start */
 
 /* #region main */
@@ -247,6 +251,7 @@ footer a:hover {
     height: 100%;
     width: 100%;
 }
+
 .information-card {
     display: flex;
     flex-direction: column;
@@ -258,6 +263,13 @@ footer a:hover {
     background-color: var(--black);
     border-radius: 5px;
     word-break: break-word;
+}
+
+.information-card:first-of-type {
+    animation: fade-in-left 2s normal;
+}
+.information-card:last-of-type {
+    animation: fade-in-right 2s normal;
 }
 
 .data-container {
@@ -301,6 +313,7 @@ footer a:hover {
     gap: var(--space-gap);
     transition: 2s all;
     user-select: none;
+    animation: fade-in-up 1.5s normal;
 }
 
 .image-gallery > div {
@@ -377,9 +390,10 @@ form > div > button {
     padding: calc(var(--gamemode-space-gap) / 2);
     box-sizing: border-box;
     background-color: var(--black);
+    border-radius: 5px;
     gap: var(--gamemode-space-gap);
-    box-sizing: border-box;
     transition: all 1s;
+    animation: fade-in-up 1.5s normal;
 }
 
 .map-image-wrapper {
@@ -427,7 +441,6 @@ form > div > button {
     }
 }
 /* #endregion Epic iframe code want ik haat iframes */
-
 
 @media only screen and (max-width: 1024px) {
     /* #region header dropdown*/
@@ -614,3 +627,46 @@ form > div > button {
     /* #endregion Champions */
 }
 
+/* #region Keyframes */
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* #endregion Keyframes */
