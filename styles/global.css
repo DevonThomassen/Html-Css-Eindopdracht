@@ -358,12 +358,53 @@ form > div > button {
 
 /* #region gamemodes */
 
-.gamemode-wrapper > div {
-    /* background-color: var(--lol-blue); */
+.gamemode-container {
+    /* Var for gamemode gap space in pixels */
+    --gamemode-space-gap: 50px;
+
     display: flex;
-    width: auto;
-    margin: 30px;
+    padding: calc(var(--gamemode-space-gap) / 2) 0;
+    flex-direction: column;
     align-items: center;
+    gap: var(--gamemode-space-gap);
+}
+
+.gamemode-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    padding: calc(var(--gamemode-space-gap) / 2);
+    box-sizing: border-box;
+    background-color: var(--black);
+    gap: var(--gamemode-space-gap);
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+.map-image-wrapper {
+    flex: 1;
+    height: 90%;
+    width: 90%;
+    border: var(--lol-blue-d) 5px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 2s;
+}
+
+.map-image-wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+.map-information-wrapper {
+    flex: 2;
+}
+
+.map-information-wrapper h2 {
+    text-align: center;
+}
+/* #endregion gamemodes */
 
 /* #region Epic iframe code want ik haat iframes */
 /* ! Epic code anders vond ik de iframes echt lelijk :^) */
@@ -375,15 +416,15 @@ form > div > button {
 
     .gamemode-wrapper {
         /* flex-direction: column; */
-}
+    }
 
     .map-image-wrapper {
-    height: 300px;
+        height: 300px;
         min-width: 400px;
     }
 
     .map-information-wrapper {
-}
+    }
 }
 /* #endregion Epic iframe code want ik haat iframes */
 
@@ -441,8 +482,16 @@ form > div > button {
 
     /* #region gamemodes */
 
-    .gamemode-wrapper > div {
-        /* background-color: var(--lol-blue); */
+    .gamemode-wrapper {
+        flex-direction: column;
+    }
+
+    .map-image-wrapper {
+        height: auto;
+    }
+
+    /* .gamemode-wrapper > div {
+        /* background-color: var(--lol-blue); 
         width: auto;
         margin: 30px;
         align-items: center;
@@ -461,7 +510,7 @@ form > div > button {
         border-radius: 25px;
         height: 200px;
         width: 300px;
-    }
+    } */
     /* #endregion gamemodes */
 
     /* #region Champions */
@@ -540,14 +589,13 @@ form > div > button {
 
     /* #region gamemodes */
 
-    .gamemode-wrapper > div {
-        flex-direction: column;
+    .gamemode-wrapper {
+        gap: calc(var(--gamemode-space-gap) / 4);
     }
-    .gamemode-wrapper > div > img {
-        margin-left: 20px;
-    }
-    .imgTwistedTreeline {
-        margin-left: 50px;
+
+    .map-image-wrapper {
+        max-height: 300px;
+        min-width: auto;
     }
     /* #endregion gamemodes */
 
