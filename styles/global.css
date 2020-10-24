@@ -220,30 +220,55 @@ footer a:hover {
 }
 /* #endregion Home */
 
+/* #region About */
+.information-card-container {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 .information-card {
-    /* background-color: var(--lol-blue); */
-    width: auto;
-    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
-    padding: 10px;
-    font-size: 12px;
-
-    background-color: #212121;
-    border-radius: 10px;
-}
-.information-card > div {
-    padding-bottom: 10px;
-}
-.information-card > div > img {
-    width: 300px;
     height: 300px;
-    border-radius: 150px;
-    margin-left: 10px;
+    width: 60%;
+    max-width: 400px;
+    background-color: var(--black);
+    border-radius: 5px;
+    word-break: break-word;
 }
 
-/* #endregion about */
+.data-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    gap: 5px;
+}
+
+.name-age-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.picture-container {
+    height: 150px;
+    width: 150px;
+    margin: 15px 0;
+}
+
+.picture-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* #endregion About */
 
 /* #region champions */
 .image-gallery {
@@ -354,35 +379,13 @@ form > div > button {
     }
     /* #endregion Home */
 
+    /* #region About*/
     .information-card {
-        /* background-color: var(--lol-blue); */
-        width: auto;
-        margin: 30px;
-        align-items: center;
-        padding: 10px;
-        font-size: 12px;
-
-        background-color: #212121;
-        border-radius: 10px;
+        max-width: 350px;
     }
-    .information-card > div {
-        padding-bottom: 10px;
-    }
-    .information-card > div > img {
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        margin-left: 10px;
-    }
-
     /* #endregion About*/
 
     /* #region contact */
-    main {
-        justify-content: center;
-        align-items: center;
-    }
-
     input,
     select,
     button {
@@ -463,27 +466,8 @@ form > div > button {
     /* #endregion Homepage */
 
     /* #region About*/
-
     .information-card {
-        /* background-color: var(--lol-blue); */
-        width: auto;
-        margin: 30px;
-        align-items: center;
-        padding: 10px;
-        font-size: 12px;
-
-        background-color: #212121;
-        border-radius: 10px;
-    }
-
-    .information-card > div {
-        padding-bottom: 10px;
-    }
-    .information-card > div > img {
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
-        margin-left: 10px;
+        height: 350px;
     }
     /* #endregion About */
 
