@@ -285,7 +285,7 @@ main#gamemodes {
     justify-content: center;
     flex-direction: column;
 }
-main#gamemodes > div {
+.Gamemode-wrapper > div {
     /* background-color: var(--lol-blue); */
     width: auto;
     margin: 30px;
@@ -296,7 +296,7 @@ main#gamemodes > div {
     border-radius: 10px;
     flex-direction: row;
 }
-main#gamemodes > div > img {
+.Gamemode-wrapper > div > img {
     border-radius: 25px;
     height: 300px;
     width: 300px;
@@ -385,33 +385,33 @@ main#gamemodes > div > img {
     }
     /* #endregion contact*/
 
-    /* #region gamemodes */
-    main#gamemodes {
-        justify-content: center;
-        flex-direction: column;
-    }
-    main#gamemodes > div {
-        /* background-color: var(--lol-blue); */
-        width: auto;
-        margin: 30px;
-        align-items: center;
-        padding: 10px;
+/* #region gamemodes */
+main#gamemodes {
+    justify-content: center;
+    flex-direction: column;
+}
+.Gamemode-wrapper > div {
+    /* background-color: var(--lol-blue); */
+    width: auto;
+    margin: 30px;
+    align-items: center;
+    padding: 10px;
 
-        background-color: #212121;
-        border-radius: 10px;
-        flex-direction: row;
-    }
-    main#gamemodes > div > img {
-        border-radius: 25px;
-        height: 200px;
-        width: 200px;
-    }
-    .imgTwistedTreeline {
-        border-radius: 25px;
-        height: 200px;
-        width: 300px;
-    }
-    /* #endregion gamemodes */
+    background-color: #212121;
+    border-radius: 10px;
+    flex-direction: row;
+}
+.Gamemode-wrapper > div > img {
+    border-radius: 25px;
+    height: 200px;
+    width: 200px;
+}
+.imgTwistedTreeline {
+    border-radius: 25px;
+    height: 200px;
+    width: 300px;
+}
+/* #endregion gamemodes */
 }
 
 @media only screen and (max-width: 480px) {
@@ -508,7 +508,7 @@ main#gamemodes > div > img {
         justify-content: center;
         flex-direction: column;
     }
-    main#gamemodes > div {
+    .Gamemode-wrapper > div {
         /* background-color: var(--lol-blue); */
         width: auto;
         margin: 30px;
@@ -518,7 +518,7 @@ main#gamemodes > div > img {
         background-color: #212121;
         border-radius: 10px;
     }
-    main#gamemodes > div > img {
+    .Gamemode-wrapper > div > img {
         margin-left: 100px;
         border-radius: 25px;
         height: 200px;
