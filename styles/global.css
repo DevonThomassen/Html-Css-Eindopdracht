@@ -102,7 +102,7 @@ nav div {
     flex: 1;
 }
 
-nav div a{
+nav div a {
     display: flex;
     height: 100%;
     width: 100%;
@@ -111,7 +111,7 @@ nav div a{
     align-items: center;
     text-decoration: none;
 }
-nav div span{
+nav div span {
     display: flex;
     position: relative;
     height: 100%;
@@ -188,7 +188,7 @@ footer a:hover {
     border-radius: 50px;
 }
 .media-container .youtube,
-.media-container .github{
+.media-container .github {
     width: 60px;
 }
 /* #endregion footer */
@@ -222,10 +222,9 @@ main {
 /* #endregion about */
 
 /* #region champions */
-/* .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+.image-gallery {
+    display: flex;
+    flex-direction: column;
 }
 
 .image-gallery > div {
@@ -234,10 +233,11 @@ main {
     align-items: center;
     border: var(--lol-blue-d) 5px solid;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 .image-gallery > div img {
     max-width: 500px;
-} */
+} 
 /* #endregion champions */
 
 /* #region contact */
@@ -309,114 +309,112 @@ main#gamemodes > div > img {
 /* #endregion gamemodes */
 
 @media only screen and (max-width: 1024px) {
+    /* #region header dropdown*/
 
-/* #region header dropdown*/
+    .dropdown-content {
+        width: 256px;
+        height: 100px;
+    }
 
-.dropdown-content {
-    width: 256px;
-    height: 100px;
-}
+    .dropdown:hover .dropdown-content {
+        display: flex;
+    }
+    /* #endregion header dropdown*/
 
-.dropdown:hover .dropdown-content {
-    display: flex;
-}
-/* #endregion header dropdown*/
+    /* #region About*/
+    main {
+        justify-content: center;
+        flex-direction: row;
+    }
+    .information-card {
+        /* background-color: var(--lol-blue); */
+        width: auto;
+        margin: 30px;
+        align-items: center;
+        padding: 10px;
+        font-size: 12px;
 
-/* #region About*/
-main {
-    justify-content: center;
-    flex-direction: row;
-}
-.information-card {
-    /* background-color: var(--lol-blue); */
-    width: auto;
-    margin: 30px;
-    align-items: center;
-    padding: 10px;
-    font-size: 12px;
+        background-color: #212121;
+        border-radius: 10px;
+    }
+    .information-card > div {
+        padding-bottom: 10px;
+    }
+    .information-card > div > img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin-left: 10px;
+    }
 
-    background-color: #212121;
-    border-radius: 10px;
-}
-.information-card > div {
-    padding-bottom: 10px;
-}
-.information-card > div > img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    margin-left: 10px;
-}
+    /* #endregion About*/
 
-/* #endregion About*/
+    /* #region contact */
+    main {
+        justify-content: center;
+        align-items: center;
+    }
 
-/* #region contact */
-main {
-    justify-content: center;
-    align-items: center;
-}
+    input,
+    select,
+    button {
+        width: auto;
+        /* margin: 0;
+        padding: 0; */
+        box-sizing: border-box;
+    }
 
-input,
-select,
-button {
-    width: auto;
-    /* margin: 0;
-    padding: 0; */
-    box-sizing: border-box;
-}
+    form {
+        /* background-color: var(--lol-blue); */
+        width: 50%;
+        margin: 50px;
+        align-items: center;
+    }
 
-form {
-    /* background-color: var(--lol-blue); */
-    width: 50%;
-    margin: 50px;
-    align-items: center;
-}
+    form > div {
+        padding-bottom: 10px;
+    }
+    form > div > label {
+        font-size: 12px;
+    }
+    form > div > input,
+    form > div > select,
+    form > div > textarea,
+    form > div > button {
+        font-size: 18px;
+    }
+    /* #endregion contact*/
 
-form > div {
-    padding-bottom: 10px;
-}
-form > div > label {
-    font-size: 12px;
-}
-form > div > input,
-form > div > select,
-form > div > textarea,
-form > div > button {
-    font-size: 18px;
-}
-/* #endregion contact*/
+    /* #region gamemodes */
+    main#gamemodes {
+        justify-content: center;
+        flex-direction: column;
+    }
+    main#gamemodes > div {
+        /* background-color: var(--lol-blue); */
+        width: auto;
+        margin: 30px;
+        align-items: center;
+        padding: 10px;
 
-/* #region gamemodes */
-main#gamemodes {
-    justify-content: center;
-    flex-direction: column;
-}
-main#gamemodes > div {
-    /* background-color: var(--lol-blue); */
-    width: auto;
-    margin: 30px;
-    align-items: center;
-    padding: 10px;
-
-    background-color: #212121;
-    border-radius: 10px;
-    flex-direction: row;
-}
-main#gamemodes > div > img {
-    border-radius: 25px;
-    height: 200px;
-    width: 200px;
-}
-.imgTwistedTreeline {
-    border-radius: 25px;
-    height: 200px;
-    width: 300px;
-}
-/* #endregion gamemodes */
+        background-color: #212121;
+        border-radius: 10px;
+        flex-direction: row;
+    }
+    main#gamemodes > div > img {
+        border-radius: 25px;
+        height: 200px;
+        width: 200px;
+    }
+    .imgTwistedTreeline {
+        border-radius: 25px;
+        height: 200px;
+        width: 300px;
+    }
+    /* #endregion gamemodes */
 }
 
 @media only screen and (max-width: 480px) {
-    
     /* #region header dropdown*/
     .dropdown-content {
         width: 120px;
@@ -465,7 +463,7 @@ main#gamemodes > div > img {
         margin-left: 10px;
     }
     /* #endregion About */
-    
+
     /* #region Contact */
     main {
         justify-content: center;
@@ -504,7 +502,7 @@ main#gamemodes > div > img {
     form > div {
     } */
     /* #endregion Contact*/
-    
+
     /* #region gamemodes */
     main {
         justify-content: center;
@@ -533,7 +531,7 @@ main#gamemodes > div > img {
         width: 300px;
     }
     /* #endregion gamemodes */
-    
+
     /* #region Footer*/
     footer {
         flex-direction: column;
@@ -549,23 +547,23 @@ main#gamemodes > div > img {
         padding-left: 0;
     }
     /* #endregion Footer*/
- 
+
     /* #region Champions */
     .image-gallery {
         display: flex;
         flex-direction: column;
         margin: 10px 0;
-        gap: 10px
+        gap: 10px;
     }
 
     .image-gallery > div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: var(--lol-blue-d) 5px solid;
-        border-radius: 5px;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* border: var(--lol-blue-d) 5px solid; */
+        /* border-radius: 5px; */
         max-width: 320px;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
     }
     .image-gallery > div img {
         height: 100%;
