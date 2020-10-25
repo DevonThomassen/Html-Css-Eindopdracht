@@ -383,6 +383,7 @@ form > div > label {
 }
 
 .image-gallery > div {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -395,6 +396,24 @@ form > div > label {
 .image-gallery > div img {
     height: 100%;
     width: 100%;
+}
+
+.image-gallery > div:hover .overlay {
+    opacity: 1;
+}
+
+/* Epic overlay */
+.overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    opacity: 0;
+    transition: all .5s;
+    background-color: var(--lol-blue-d);
 }
 /* #endregion champions */
 
