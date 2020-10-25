@@ -13,7 +13,7 @@
     <header>
         <h1>Contact</h1>
         <nav>
-            <div><a href="../index.html">Home</a></div>          
+            <div><a href="../index.html">Home</a></div>
             <div><a href="./champions.html">Champions</a></div>
             <div><a href="./gamemodes.html">Maps</a></div>
             <div class="dropdown">
@@ -27,50 +27,52 @@
     </header>
 
     <main>
-        <form action="mailto:d.thomassen1@.student.avans.nl;qjh.diepstarten@student.avans.nl" method="GET">
-            <div class="name-container">
-                <label>Naam</label>
-                <input class="text-field input-field" type="text" name="name">
-            </div>
-            <div class="gender-container">
-                <label>Gender</label>
-                <div>
-                    <div class="gender-field">
-                        <label for="male">Male</label>
-                        <input class="radio-field" type="radio" name="gender" value="male">
-                    </div>
-                    <div class="gender-field">
-                        <label for="female">Female</label>
-                        <input class="radio-field" type="radio" name="gender" value="female">            
-                    </div>
-                    <div class="gender-field">
-                        <label for="other">Other</label>
-                        <input class="radio-field" type="radio" name="gender" value="other">            
+        <div class="form-wrapper">
+            <form action="mailto:d.thomassen1@.student.avans.nl;qjh.diepstarten@student.avans.nl" method="GET">
+                <div class="name-container">
+                    <label>Name</label>
+                    <input class="text-field input-field" type="text" name="name">
+                </div>
+                <div class="gender-container">
+                    <label>Gender</label>
+                    <div>
+                        <div class="gender-field">
+                            <label for="male">Male</label>
+                            <input class="radio-field" type="radio" name="gender" value="male">
+                        </div>
+                        <div class="gender-field">
+                            <label for="female">Female</label>
+                            <input class="radio-field" type="radio" name="gender" value="female">
+                        </div>
+                        <div class="gender-field">
+                            <label for="other">Other</label>
+                            <input class="radio-field" type="radio" name="gender" value="other">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="subject-container">
-                <label>Subject</label>
-                <select class="select-field input-field" name="subject">
-                    <option value="Lore">Lore</option>
-                    <option value="Gamemode">Gamemode</option>
-                    <option value="Champions">Champions</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-            <div class="message-container">
-                <label>Message</label>
-                <textarea class="text-field input-field" rows="2" name="body"></textarea>
-            </div>
-            <div class="patch-notes-container">
-                <label>Do you want to receive the patch notes?</label>
-                <input class="checkbox-field" type="checkbox" name="patch-notes">
-            </div>
-            
-            <div>
-                <button class="btn-p input-field" type="submit">Submit</button>
-            </div>
-        </form>
+                <div class="subject-container">
+                    <label>Subject</label>
+                    <select class="select-field input-field" name="subject">
+                        <option value="Lore">Lore</option>
+                        <option value="Gamemode">Gamemode</option>
+                        <option value="Champions">Champions</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="message-container">
+                    <label>Message</label>
+                    <textarea class="text-field input-field" rows="2" name="body"></textarea>
+                </div>
+                <div class="patch-notes-container">
+                    <label>Do you want to receive the patch notes?</label>
+                    <input class="checkbox-field" type="checkbox" name="patch-notes">
+                </div>
+
+                <div>
+                    <button class="btn-p input-field" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer>
