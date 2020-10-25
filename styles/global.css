@@ -47,10 +47,11 @@ h1 {
     padding: 0;
 }
 
+/* TODO: Waarom dit? */
 body {
     display: flex;
     flex-direction: column;
-}
+} 
 
 header,
 footer {
@@ -68,6 +69,8 @@ main {
 
 /* #region header */
 header {
+    display: flex;
+    flex-direction: column;
     height: 75px;
 }
 
@@ -75,11 +78,6 @@ header,
 nav {
     color: var(--white);
     background-color: var(--black);
-}
-
-header {
-    display: flex;
-    flex-direction: column;
 }
 
 header h1 {
@@ -256,7 +254,6 @@ footer a:hover {
 .information-card {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     height: 300px;
     width: 60%;
@@ -321,12 +318,10 @@ footer a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 400px;
     border: var(--lol-blue-d) 5px solid;
     border-radius: 5px;
     box-sizing: border-box;
-}
-.image-gallery > div {
-    max-width: 400px;
 }
 
 .image-gallery > div img {
@@ -429,16 +424,9 @@ form > div > button {
         height: 50%;
     }
 
-    .gamemode-wrapper {
-        /* flex-direction: column; */
-    }
-
     .map-image-wrapper {
         height: 300px;
         min-width: 400px;
-    }
-
-    .map-information-wrapper {
     }
 }
 /* #endregion Epic iframe code want ik haat iframes */
