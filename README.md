@@ -1,5 +1,5 @@
 # 💻 Eindopdracht
-Eindopdracht met Quinn voor WEBS1
+Eindopdracht van Devon Thomassen en Quinn Diepstraten voor WEBS1
 
 <br>
 
