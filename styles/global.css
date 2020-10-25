@@ -356,11 +356,8 @@ form > div {
 }
 form > div > label {
     font-size: 18px;
-}
-form > div > input,
-form > div > select,
-form > div > textarea,
-form > div > button {
+}/* TODO: class aanmaken */
+.input-field {
     font-size: 24px;
 }
 /* #endregion contact */
@@ -474,10 +471,7 @@ form > div > button {
     form > div > label {
         font-size: 12px;
     }
-    form > div > input,
-    form > div > select,
-    form > div > textarea,
-    form > div > button {
+    .input-field {
         font-size: 18px;
     }
     /* #endregion contact*/
@@ -578,10 +572,7 @@ form > div > button {
     form > div > label {
         font-size: 12px;
     }
-    form > div > input,
-    form > div > select,
-    form > div > textarea,
-    form > div > button {
+    .input-field{
         font-size: 18px;
     }
     .gender-container{
@@ -593,8 +584,7 @@ form > div > button {
         flex-direction: row;
         justify-content: space-evenly;
     }
-    #male-field > input,
-    #female-field > input{
+    .gender-field > input{
         width: auto;
     }
     /*
