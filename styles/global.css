@@ -596,6 +596,19 @@ form > div > button {
     form > div > button {
         font-size: 18px;
     }
+    .gender-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .gender-container > div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #male-field > input,
+    #female-field > input{
+        width: auto;
+    }
     /*
     form > div {
     } */
