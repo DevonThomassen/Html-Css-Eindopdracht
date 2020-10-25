@@ -51,12 +51,26 @@ h1 {
 body {
     display: flex;
     flex-direction: column;
-} 
+}
 
 header,
 footer {
     z-index: 2;
 }
+
+input,
+select,
+button {
+    box-sizing: border-box;
+}
+
+/* Removes outlining around input and textarea */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
 /* #endregion start */
 
 /* #region main */
@@ -136,17 +150,17 @@ nav div span:hover {
     background-color: var(--black);
     width: 25%;
     height: 100px;
-    z-index: 1;
+    z-index: 0;
     justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
-    animation: test 1s normal;
+    animation: dropdown-animation 1s normal;
 }
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content {
     display: flex;
 }
-.dropdown-content > a{
-    animation: display 2s normal;
+.dropdown-content > a {
+    animation: display-dropdown-animation 2s normal;
 }
 /* #endregion header dropdown*/
 
@@ -334,34 +348,57 @@ footer a:hover {
 /* #endregion champions */
 
 /* #region contact */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 textarea {
     resize: none;
 }
 
-input,
-select,
-button {
-    width: auto;
-    /* margin: 0;
-    padding: 0; */
-    box-sizing: border-box;
-}
-
 form {
-    /* background-color: var(--lol-blue); */
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 40%;
     margin: 50px;
-    align-items: center;
+    transition: all 1s;
 }
 
 form > div {
+    display: flex;
+    flex-direction: column;
     padding-bottom: 10px;
 }
+
 form > div > label {
+    width: 100%;
     font-size: 18px;
 }
+
 .input-field {
     font-size: 24px;
+}
+
+.gender-container > div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+.patch-notes-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.patch-notes-container label {
+    width: auto;
 }
 /* #endregion contact */
 
@@ -452,30 +489,28 @@ form > div > label {
     /* #endregion About*/
 
     /* #region contact */
-    input,
-    select,
-    button {
-        width: auto;
-        /* margin: 0;
-        padding: 0; */
-        box-sizing: border-box;
-    }
-
     form {
-        /* background-color: var(--lol-blue); */
         width: 50%;
-        margin: 50px;
-        align-items: center;
     }
 
-    form > div {
-        padding-bottom: 10px;
-    }
     form > div > label {
         font-size: 12px;
     }
+    
     .input-field {
         font-size: 18px;
+    }
+
+    .gender-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gender-container > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 10px;
     }
     /* #endregion contact*/
 
@@ -553,70 +588,22 @@ form > div > label {
 
     /* #region Contact */
 
-    /* Removes outlining around input and textarea */
-    input:focus,
-    textarea:focus,
-    select:focus {
-        outline: none;
-    }
-
-    .input-field{
-        width: 100%;
-        font-size: 18px;
-    }
-
-    .gender-container {
-        display: flex;
-        flex-direction: row;
-    }
-
-    input,
-    select,
-    button {
-        /* width: 100%; */
-        /* margin: 0;
-        padding: 0; */
-        box-sizing: border-box;
-    }
-
     select {
         padding-top: 10px;
     }
-
-    .patch-notes-container {
-        display: flex;
-        align-items: center;
-    }
-
+    
     form {
         width: 100%;
-        margin: 50px;
-        align-items: center;
     }
 
-    form > div {
-        padding-bottom: 10px;
-    }
     form > div > label {
         font-size: 12px;
     }
-    
-    .gender-container{
-        display: flex;
-        flex-direction: column;
+
+    .input-field {
+        width: 100%;
+        font-size: 18px;
     }
-    .gender-container > div{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-top: 10px;
-    }
-    .gender-field > input{
-        width: auto;
-    }
-    /*
-    form > div {
-    } */
     /* #endregion Contact*/
 
     /* #region gamemodes */
@@ -707,47 +694,40 @@ form > div > label {
         transform: translateX(0);
     }
 }
-@keyframes test {
+@keyframes dropdown-animation {
     0% {
-        opacity: 1;
+        opacity: 0;
         transform: translateY(-50%);
         width: 10px;
         background-color: var(--lol-blue);
     }
     25% {
-        opacity: 1;
+        opacity: 0;
         width: 10px;
     }
     50% {
         opacity: 1;
         transform: translateY(-0);
         width: 10px;
-        transform: translateX(-50);   
-    }
-    75% {
-        opacity: 1;
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(-0);
-        background-color: var(--bg-black);
-    }    
-}
-@keyframes display {
-    0% {
-      opacity: 0;
-    }
-    25% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    75% {
-      opacity: 1;
+        transform: translateX(-50);
     }
     100% {
-      opacity: 1;
+        transform: translateX(-0);
+        background-color: var(--bg-black);
     }
-  }
+}
+@keyframes display-dropdown-animation {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 /* #endregion Keyframes */
