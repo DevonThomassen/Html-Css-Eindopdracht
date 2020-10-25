@@ -550,17 +550,42 @@ form > div > label {
 
     /* #region Contact */
 
+    /* Removes outlining around input and textarea */
+    input:focus,
+    textarea:focus,
+    select:focus {
+        outline: none;
+    }
+
+    .input-field{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .gender-container {
+        display: flex;
+        flex-direction: row;
+    }
+
     input,
     select,
     button {
-        width: 100%;
+        /* width: 100%; */
         /* margin: 0;
         padding: 0; */
         box-sizing: border-box;
     }
 
+    select {
+        padding-top: 10px;
+    }
+
+    .patch-notes-container {
+        display: flex;
+        align-items: center;
+    }
+
     form {
-        /* background-color: var(--lol-blue); */
         width: 100%;
         margin: 50px;
         align-items: center;
@@ -572,9 +597,7 @@ form > div > label {
     form > div > label {
         font-size: 12px;
     }
-    .input-field{
-        font-size: 18px;
-    }
+    
     .gender-container{
         display: flex;
         flex-direction: column;
@@ -582,7 +605,8 @@ form > div > label {
     .gender-container > div{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        padding-top: 10px;
     }
     .gender-field > input{
         width: auto;
