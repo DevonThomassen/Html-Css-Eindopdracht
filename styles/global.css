@@ -1,9 +1,3 @@
-/* TODO: 
-    ! Clean-up code, remove duplicates
-    ! Fix media-queries and put them together
-    ! Add comments!!!
-*/
-
 /* #region imports */
 @font-face {
     font-family: "Roboto-Light";
@@ -28,9 +22,7 @@
     --white: #fff;
     --lol-blue: #0bc4e2;
     --lol-blue-d: #0093b0;
-    --lol-yellow: #d0a85c;
     font-family: "Roboto-Regular", sans-serif;
-    /* TODO: Remove this later */
     color: var(--white);
 }
 
@@ -47,7 +39,6 @@ h1 {
     padding: 0;
 }
 
-/* TODO: Waarom dit? */
 body {
     display: flex;
     flex-direction: column;
@@ -90,7 +81,6 @@ header {
 
 header,
 nav {
-    color: var(--white);
     background-color: var(--black);
 }
 
@@ -134,14 +124,17 @@ nav div span:hover {
     background-color: var(--lol-blue);
     transition: all 0.5s ease-in;
 }
-
-/* .hamburger {
-    display: none;
-} */
 /* #endregion header */
 
-/* #region header dropdown*/
-.dropdown {
+/* #region dropdown*/
+.dropdown span::before {
+    content: ">";
+    transform: rotate(0deg);
+    margin-right: 5px;
+    transition: all 0.75s;
+}
+.dropdown span:hover::before {
+    transform: rotate(90deg);
 }
 
 .dropdown-content {
@@ -162,14 +155,14 @@ nav div span:hover {
 .dropdown-content > a {
     animation: display-dropdown-animation 2s normal;
 }
-/* #endregion header dropdown*/
+/* #endregion dropdown*/
 
 /* #region footer */
 footer {
     display: flex;
     height: 100px;
     width: 100%;
-    padding: 0 50px; /* TODO: phone version smaller */
+    padding: 0 50px;
     background-color: var(--black);
     color: var(--white);
     justify-content: space-between;
@@ -192,7 +185,6 @@ footer a:hover {
     justify-content: space-evenly;
 }
 
-/* TODO: make p global ? */
 .info-container p {
     margin: 0;
     padding: 0;
@@ -225,7 +217,7 @@ footer a:hover {
 
 /* #endregion footer */
 
-/* #region Home */
+/* #region home */
 .home-container {
     display: flex;
     height: 100%;
@@ -255,9 +247,9 @@ footer a:hover {
     border-radius: 5px;
     border: var(--lol-blue-d) 5px solid;
 }
-/* #endregion Home */
+/* #endregion home */
 
-/* #region About */
+/* #region about */
 .information-card-container {
     display: flex;
     flex-wrap: wrap;
@@ -311,8 +303,63 @@ footer a:hover {
     width: 100%;
     border-radius: 50%;
 }
+/* #endregion about */
 
-/* #endregion About */
+/* #region contact */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 40%;
+    margin: 50px;
+    transition: all 1s;
+}
+
+textarea {
+    resize: none;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+form > div > label {
+    width: 100%;
+    font-size: 16px;
+}
+
+.input-field,
+.gender-field label {
+    font-size: 24px;
+}
+
+.gender-container > div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+.patch-notes-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.patch-notes-container label {
+    width: auto;
+}
+/* #endregion contact */
 
 /* #region champions */
 .image-gallery {
@@ -347,63 +394,7 @@ footer a:hover {
 }
 /* #endregion champions */
 
-/* #region contact */
-.form-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-textarea {
-    resize: none;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 40%;
-    margin: 50px;
-    transition: all 1s;
-}
-
-form > div {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 10px;
-}
-
-form > div > label {
-    width: 100%;
-    font-size: 18px;
-}
-
-.input-field {
-    font-size: 24px;
-}
-
-.gender-container > div {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    gap: 10px;
-}
-
-.patch-notes-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-
-.patch-notes-container label {
-    width: auto;
-}
-/* #endregion contact */
-
 /* #region gamemodes */
-
 .gamemode-container {
     /* Var for gamemode gap space in pixels */
     --gamemode-space-gap: 50px;
@@ -476,17 +467,17 @@ form > div > label {
     }
     /* #endregion header dropdown*/
 
-    /* #region Home */
+    /* #region home */
     .iframe-wrapper {
         height: 40%;
     }
-    /* #endregion Home */
+    /* #endregion home */
 
-    /* #region About*/
+    /* #region about*/
     .information-card {
         max-width: 350px;
     }
-    /* #endregion About*/
+    /* #endregion about*/
 
     /* #region contact */
     form {
@@ -496,26 +487,18 @@ form > div > label {
     form > div > label {
         font-size: 12px;
     }
-    
+
     .input-field {
         font-size: 18px;
     }
 
-    .gender-container {
-        display: flex;
-        flex-direction: column;
-    }
-
     .gender-container > div {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 10px;
     }
     /* #endregion contact*/
 
     /* #region gamemodes */
-
     .gamemode-wrapper {
         flex-direction: column;
     }
@@ -523,32 +506,7 @@ form > div > label {
     .map-image-wrapper {
         height: auto;
     }
-
-    /* .gamemode-wrapper > div {
-        /* background-color: var(--lol-blue); 
-        width: auto;
-        margin: 30px;
-        align-items: center;
-        padding: 10px;
-
-        background-color: #212121;
-        border-radius: 10px;
-        flex-direction: row;
-    }
-    .gamemode-wrapper > div > img {
-        border-radius: 25px;
-        height: 200px;
-        width: 200px;
-    }
-    .imgTwistedTreeline {
-        border-radius: 25px;
-        height: 200px;
-        width: 300px;
-    } */
     /* #endregion gamemodes */
-
-    /* #region Champions */
-    /* #endregion Champions */
 }
 /* #region Epic iframe code want ik haat iframes */
 /* ! Epic code anders vond ik de iframes echt lelijk :^) */
@@ -561,64 +519,8 @@ form > div > label {
 /* #endregion Epic iframe code want ik haat iframes */
 
 @media only screen and (max-width: 480px) {
-    /* #region header dropdown*/
-    .dropdown-content {
-        width: 120px;
-        height: 100px;
-    }
+    /* #region footer*/
 
-    .dropdown:hover .dropdown-content {
-        display: flex;
-        /* transform: all 0.5s ease-in-out; */
-    }
-    /* #endregion header dropdown*/
-
-    /* #region Homepage */
-    .iframe-wrapper {
-        height: 30%;
-        width: 80%;
-    }
-    /* #endregion Homepage */
-
-    /* #region About*/
-    .information-card {
-        height: 350px;
-    }
-    /* #endregion About */
-
-    /* #region Contact */
-
-    select {
-        padding-top: 10px;
-    }
-    
-    form {
-        width: 100%;
-    }
-
-    form > div > label {
-        font-size: 12px;
-    }
-
-    .input-field {
-        width: 100%;
-        font-size: 18px;
-    }
-    /* #endregion Contact*/
-
-    /* #region gamemodes */
-
-    .gamemode-wrapper {
-        gap: calc(var(--gamemode-space-gap) / 4);
-    }
-
-    .map-image-wrapper {
-        max-height: 300px;
-        min-width: auto;
-    }
-    /* #endregion gamemodes */
-
-    /* #region Footer*/
     footer {
         flex-direction: column;
     }
@@ -638,9 +540,45 @@ form > div > label {
         height: 50px;
         width: auto;
     }
-    /* #endregion Footer*/
+    /* #endregion footer*/
+    
+    /* #region homepage */
+    .iframe-wrapper {
+        height: 30%;
+        width: 80%;
+    }
+    /* #endregion homepage */
 
-    /* #region Champions */
+    /* #region about*/
+    .information-card {
+        height: 350px;
+    }
+    /* #endregion about */
+
+    /* #region contact */
+    select {
+        padding-top: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form > div > label {
+        font-size: 12px;
+    }
+
+    .input-field {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .gender-field label {
+        font-size: 18px;
+    }
+    /* #endregion contact*/
+
+    /* #region champions */
     .image-gallery {
         --space-gap: 10px;
     }
@@ -648,11 +586,21 @@ form > div > label {
     .image-gallery > div {
         max-width: 320px;
     }
+    /* #endregion champions */
 
-    /* #endregion Champions */
+    /* #region gamemodes */
+    .gamemode-wrapper {
+        gap: calc(var(--gamemode-space-gap) / 4);
+    }
+
+    .map-image-wrapper {
+        max-height: 300px;
+        min-width: auto;
+    }
+    /* #endregion gamemodes */
 }
 
-/* #region Keyframes */
+/* #region keyframes */
 @keyframes fade-in-up {
     0% {
         opacity: 0;
@@ -730,4 +678,4 @@ form > div > label {
         opacity: 1;
     }
 }
-/* #endregion Keyframes */
+/* #endregion keyframes */
