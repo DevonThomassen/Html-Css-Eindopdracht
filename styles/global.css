@@ -140,10 +140,13 @@ nav div span:hover {
     justify-content: center;
     flex-direction: column;
     box-sizing: border-box;
+    animation: test 1s normal;
 }
-
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content{
     display: flex;
+}
+.dropdown-content > a{
+    animation: display 2s normal;
 }
 /* #endregion header dropdown*/
 
@@ -356,7 +359,7 @@ form > div {
 }
 form > div > label {
     font-size: 18px;
-}/* TODO: class aanmaken */
+}
 .input-field {
     font-size: 24px;
 }
@@ -704,4 +707,47 @@ form > div > label {
         transform: translateX(0);
     }
 }
+@keyframes test {
+    0% {
+        opacity: 1;
+        transform: translateY(-50%);
+        width: 10px;
+        background-color: var(--lol-blue);
+    }
+    25% {
+        opacity: 1;
+        width: 10px;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-0);
+        width: 10px;
+        transform: translateX(-50);   
+    }
+    75% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-0);
+        background-color: var(--bg-black);
+    }    
+}
+@keyframes display {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 /* #endregion Keyframes */
